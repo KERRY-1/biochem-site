@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>生物化学小知识</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .signature {
+            text-align: right;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>ATP：细胞的能量货币</h1>
+    <div class="content">
+        <p>在生物化学中，<strong>ATP（三磷酸腺苷）</strong>是最重要的能量分子之一，被称为细胞的"能量货币"。</p>
+        <p>ATP由三部分组成：</p>
+        <ul>
+            <li>腺苷（腺嘌呤+核糖）</li>
+            <li>三个磷酸基团</li>
+        </ul>
+        <p>当ATP水解（去掉一个磷酸基团）变成ADP时，会释放能量供细胞使用。这个能量驱动了几乎所有的细胞活动，包括：</p>
+        <ul>
+            <li>肌肉收缩</li>
+            <li>神经信号传递</li>
+            <li>分子合成</li>
+        </ul>
+        <p>细胞通过呼吸作用（线粒体中）不断将ADP重新合成ATP，维持能量供应。</p>
+    </div>
+    <div class="signature">
+        <p>编写：夏永杰</p>
+        <p>日期：<span id="current-date"></span></p>
+    </div>
+    <script>
+        // 自动添加当前日期，格式为 2025-07-15
+        const date = new Date();
+        document.getElementById('current-date').textContent =
+            date.getFullYear() + '-' +
+            String(date.getMonth() + 1).padStart(2, '0') + '-' +
+            String(date.getDate()).padStart(2, '0');
+    </script>
+</body>
+</html>
